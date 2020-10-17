@@ -1,0 +1,14 @@
+<div align="center">
+  <h1>Tarea 1</h1>
+
+  <form [formGroup]="bioForm">
+    <label for="nombre">Escribe tu nombre: </label> 
+    <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" formControlName="nombre"><br><br>
+    <label for="bio">Bio: </label><br>
+    <textarea rows="4"  [(ngModel)]="bio" cols="50" placeholder="escribe tu biografia aquí..." id="bio" formControlName="bio"></textarea><br>
+  </form><br>
+
+  <h1>Presentacion:</h1>
+  <h3>Nombre: </h3>{{nombre}}<br>
+  <h3>Bio: </h3> {{bio}}
+</div>
